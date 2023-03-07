@@ -15,10 +15,9 @@ const Login = () => {
     }
   }, [user]);
 
-  function handleSubmit(event) {
+  function handleSubmit() {
     alert("An essay was submitted: " + email + " " + password);
     signInWithEmailAndPassword(email, password);
-    event.preventDefault();
   }
 
   return (
